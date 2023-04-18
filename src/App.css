@@ -1,0 +1,148 @@
+.App {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: #282c34;
+}
+
+.App-content {
+  display: flex;
+  min-height: 100vh;
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  padding: 16px;
+  color: white;
+}
+.gif-list{
+  display: flex;
+  width: 80vw;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+form{
+  display: flex;
+  align-items: center;
+}
+
+input{
+  width: 30vw;
+  height: 40px;
+  padding: 0;
+  border: none;
+  padding: 0px 10px;
+  font-size: 15px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.App-content h4{
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(45deg,#009,#009,#e0e,#e0e);
+
+}
+
+.App-content button{
+  background-image: linear-gradient(45deg,#009,#009,#e0e,#e0e);
+  height: 100%;
+  font-size: 25px;
+  border-radius: 0px 10px 10px 0px;
+  padding: 0px 10px;
+  color: white;
+  cursor: pointer;
+  border:none;
+}
+
+.Gif{
+  border-radius: 6px;
+  color: #fff;
+  display: flex ;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  margin: 10px 0px;
+  padding: 32px;
+  width: 40%;
+}
+
+
+.Gif button{
+  background-image: linear-gradient(45deg,#009,#009,#e0e,#e0e);
+  height: 50px;
+  cursor: pointer;
+  margin: 10px 0px;
+  font-family:sans-serif;
+  border-radius: 20px;
+  border: 0px ;
+  color: white;
+  font-size: 25px;
+  font-weight: 800;
+  width: 100%;
+}
+
+.Gif h4{
+  margin: 0;
+  color: white;
+}
+
+.Gif img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.cont-detalle{
+  display: flex;
+  flex-direction: column;
+  width: 60vw;
+}
+
+.cont-detalle h3{
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(45deg,#009,#009,#e0e,#e0e);
+  margin: 0;
+  padding: 0;
+}
+
+.detalle-text {
+  display: flex;
+  width: 100%;
+  text-align: center;
+  justify-content: start;
+  align-items: center;
+  margin: 10px 0px;
+}
+
+.detalle-text h3{
+  font-size: 30px;
+}
+
+.detalle-text h4{
+  font-size: 20px;
+  margin: 0px 10px;
+  color: white;
+}
+
+@media only screen and (max-width: 800px){
+
+.Gif{
+  padding: 10px 0px;
+  width: 80%;
+}
+
+.detalle-text{
+  flex-direction: column;
+}
+
+}
+
+@media only screen and (max-width: 500px){
+  .App-content button{
+    font-size: 15px;
+  }
+}
